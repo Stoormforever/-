@@ -1,0 +1,12 @@
+digraph tree {
+coke -> butter;
+coke -> pepsi;
+butter -> bread;
+butter -> case;
+bread -> beach;
+pepsi -> fanta;
+pepsi -> table;
+fanta -> lamp;
+table -> sand;
+table -> wind;
+}

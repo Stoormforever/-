@@ -1,0 +1,16 @@
+#!/usr/bin/gnuplot -persist
+NO_ANIMATION = 1
+set fit prescale
+
+set terminal svg size 1920, 1080
+set output 'file2.svg'
+set size ratio 0.61803
+
+plot './postproc/data_err_key_q.txt' with errorbars lt rgb "red", \
+'./postproc/data_err_key_q.txt' using 1:2 with lines lt rgb "red", \
+'./postproc/data_err_key_s.txt' with errorbars lt rgb "blue", \
+'./postproc/data_err_key_s.txt' using 1:2 with lines lt rgb "blue", \
+'./postproc/data_err_main_s.txt' with errorbars lt rgb "green", \
+'./postproc/data_err_main_s.txt' using 1:2 with lines lt rgb "green", \
+'./postproc/data_err_main_q.txt' with errorbars lt rgb "yellow", \
+'./postproc/data_err_main_q.txt' using 1:2 with lines lt rgb "yellow"

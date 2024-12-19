@@ -1,0 +1,5 @@
+#define ERR_OK 0
+#define QUEUE_OVERFLOW 1
+#define EMPTY_QUEUE_ERROR 2
+#define ALLOCATION_ERROR 3
+#define MENU_ERROR 4

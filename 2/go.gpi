@@ -1,0 +1,17 @@
+#!/usr/bin/gnuplot -persist
+reset
+NO_ANIMTION = 1
+
+set terminal svg size 1920, 1080
+set output 'file1.svg'
+set size ratio 0.61803
+
+set xlabel "NMAX"
+set ylabel "Time, ms"
+set grid
+set title "Plot"
+
+plot './postproc/data_key_q.txt' with linespoints pt 9 lt rgb "red", \
+'./postproc/data_key_s.txt' with linespoints pt 8 lt rgb "blue", \
+'./postproc/data_main_q.txt' with linespoints pt 7 lt rgb "green", \
+'././postproc/data_main_s.txt' with linespoints pt 6 lt rgb "yellow"

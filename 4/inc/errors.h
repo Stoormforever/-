@@ -1,0 +1,6 @@
+#define ERR_OK 0
+#define STACK_OVERFLOW 1
+#define EMPTY_STACK_ERROR 2
+#define ALLOCATION_ERROR 3
+#define READ_ERROR 5
+#define MENU_ERROR 6

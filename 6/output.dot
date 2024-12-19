@@ -1,0 +1,9 @@
+digraph tree {
+coffee [color="red"];
+coke [color="red"];
+coke -> coffee;
+coke -> pepsi;
+flash -> fanta;
+pepsi -> flash;
+pepsi -> tea;
+}
